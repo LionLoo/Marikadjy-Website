@@ -10,21 +10,18 @@ btn.addEventListener("click", () => {
         .then((data) => {
             console.log(data);
             result.innerHTML = `
-            <div class="word">
-                    <h3>${inpWord}</h3>
-                    <button onclick="playSound()">
-                        <i class="fas fa-volume-up"></i>
-                    </button>
+            <div class="word"; style="width:800px; margin:2 auto;[B]padding:20px 0;[/B]">
+                    <h3>English: ${inpWord}</h3> 
+                    </div style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]">
+                    <h3>Mebengokre: ${inpWord}</h3> 
+                    </div style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]">
+                    <h3>Portuguese: ${inpWord}</h3> 
                 </div>
-                <div class="details">
-                    <p>${data[0].meanings[0].partOfSpeech}</p>
-                    <p>/${data[0].phonetic}/</p
-                </div>
-                <p class="word-meaning">
-                   ${data[0].meanings[0].definitions[0].definition}
+                
+               
                 </p>
                 <p class="word-example">
-                    ${data[0].meanings[0].definitions[0].example || ""}
+                   
                 </p>`;
             sound.setAttribute("src", `https:${data[0].phonetics[0].audio}`);
         })
@@ -32,6 +29,10 @@ btn.addEventListener("click", () => {
             result.innerHTML = `<h3 class="error">Couldn't Find The Word</h3>`;
         });
 });
+
+
+  
+
 function playSound() {
     sound.play();
 }
