@@ -11,11 +11,23 @@ btn.addEventListener("click", () => {
             console.log(data);
             result.innerHTML = `
             <div class="word"; style="width:800px; margin:2 auto;[B]padding:20px 0;[/B]">
-                    <h3>English: ${inpWord}</h3> 
+                    <h3><p style="color:#041634;">English:</p></h3> 
                     </div style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]">
-                    <h3>Mebengokre: ${inpWord}</h3> 
+                    <p>
+                    <h3>    <p style="color:#041634;">${inpWord}</p></h3> 
+                    <p>
                     </div style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]">
-                    <h3>Portuguese: ${inpWord}</h3> 
+                    <h3> <p style="color:#4B9634;">Mebengokre:</p></h3> 
+                    </div style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]">
+                    <p>
+                    <h3>    <p style="color:#4B9634;">${inpWord}</p></h3> 
+                    <p>
+                    </div style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]">
+                    <h3><p style="color:#041634;">Portuguese:</p></h3> 
+                    </div style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]">
+                    <p>
+                    <h3>    <p style="color:#041634;">${inpWord}</p></h3> 
+                    
                 </div>
                 
                
